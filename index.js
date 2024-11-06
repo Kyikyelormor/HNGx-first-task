@@ -3,9 +3,8 @@ function updateCurrentLocalTime() {
     const options = { timeZone:'Africa/Lagos'}; //Nigeria time Zone
     const localTime = currentDate.toLocaleTimeString('en-US', options);
     const utcTimeMilliseconds = currentDate.getTime();
-    document.querySelector('[data-testid="currentUTCTime"]').textContent =
-    'Local Time: ' + localTime + 
-    ' UTC Time (ms): ' +utcTimeMilliseconds;
+    document.querySelector('[data-testid="currentDateTime"]').textContent = localTime 
+    document.querySelector('[data-testid="currentUTCTime"]').textContent = utcTimeMilliseconds + '(ms)';
 }
 
 updateCurrentLocalTime();

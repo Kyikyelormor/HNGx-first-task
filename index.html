@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet " href="./index.css"/>
     <title>HNGx-first-task</title>
-    </head>
+  </head>
+
 <body>
+    <header>
+      <h1>Welcome to my Portfolio Profile</h1>
+    </header>
+
     <main>
-        <section>
-            <p><strong>User Name</strong> <span data-testid="UserName"><strong>Sumayyah Muhibudeen</strong></span></p>
-            <p> <strong>Slack Username:</strong> <span data-testid="slackUserName"><strong>Somek 1255</strong></span></p>
-       <img src="images/slack profile picture.jpg" alt="somek 1255" data-testid="slackDisplayImage">
-       <p> Track: <span data-testid="myTrack">Frontend</span></p> 
+    <section class="profile">
+        <h2>MY PROFILE</h2>
+         <p>
+                <h4>UserName:
+                <span data-testid="UserName">Muhibudeen Sumayyah Olaide</span></h4>
+         </p>
 
+         <p> 
+           <h4>Track: <span data-testid="myTrack">Frontend Development</span> </h4> 
+         </p> 
 
-        <p class="weekday" data-testid="currentDayOfTheWeek">Day Of The Week: <span id="main_weekday">Saturday</span></p>
+         <p>
+            <h4>Proficiency: 
+            <span data-testid="language\proficiency"> HTML, CSS, JavaScript <span></h4>
+         </p>
+
+         <p>
+           <h4>Day:<span data-testid="currentDayOfTheWeek"></span></h4>
+        </p>
+        
+         <p> <h4> Current Time: 
+         <span data-testid="currentDateTime"></span> </h4>
+         </p>
+         
        
-        <p class="UTC_Time" data-testid="currentUTCTime">Time: <span id="mainUTCTime">11:32</span></p>
-    </section>
+         <p  >
+            <h4> UTC Time: <span data-testid="currentUTCTime"></span> </h4>
+        </p>
 
-    <a href="https://github.com/Kyikyelormor/HNGx task one " data-testid="githubURL" >Github Repository</a>
+        <h2> My Socials </h2>
+
+         <p>Twitter: 
+         <a href="https://twitter.com/kyikyelormor" data-testid="twitterURL" >Twitter Profile</a>
+        
+         <p>LinkedIn: 
+         <a href="https://www.linkedin.com/in/muhibudeen-sumayyah-olaide-a2a324221/" data-testid="linkedInURL" >LinkedIn Profile</a>
+        
+        <p>GitHub: 
+         <a href="https://github.com/Kyikyelormor/" data-testid="githubURL" >Github Repository</a>
+        </p>
+    </section>
+        <section>
+            <img src="slack profile picture.jpg" alt="profile picture" data-testid="profilePicture">
+        </section>
 
     </main>
 
-    <script src="./index.js"></script>
+    <footer>
     
-    </body>
+        <p> All rights reserved &copy 2023</p>
+        <script src="./index.js"></script>
+        
+    </footer>
+    
+</body>
 </html>
